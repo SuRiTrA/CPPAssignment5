@@ -37,6 +37,28 @@ void mean(int s, int arr[])
   cout<<"\n \nThe mean of array elements is: "<<mean;
 }
 
+void sort(int n,int arr[])
+{
+    for(int i=0; i<(n-1); i++)
+	{
+		for(int j=0; j<(n-i-1); j++)
+		{
+			if(arr[j]>arr[j+1])
+			{
+				int temp=arr[j];
+				arr[j]=arr[j+1];
+				arr[j+1]=temp;
+			}
+		}
+	}
+	cout<<"Sorted list in ascending order :\n";
+	for(int d=0; d<n; d++)
+	{
+		cout<<arr[d]<<" ";
+	}
+     cout<<endl;
+}
+
 void median(int s, int arr[])
 {
   int median;
@@ -84,7 +106,7 @@ int main()
   cout<<"\n \nEnter the size of the array: ";
   cin>>size;
   int arr[size];
-  cout<<"\n \nEnter the elements of array in ascending order: ";
+  cout<<"\n \nEnter the elements of array: ";
   for(int a=0;a<size;a++)
   {
     cout<<"\nElement "<<(a+1)<<": ";
@@ -93,7 +115,9 @@ int main()
   max(size, arr);
   min(size, arr);
   mean(size, arr);
-  median(size, arr);
+  mode(size, arr);
+  //For finding mean we need a sorted array
+  sort(size, arr);
   mode(size, arr);
   return 0;
 }
