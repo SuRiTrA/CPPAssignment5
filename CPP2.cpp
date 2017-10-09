@@ -102,7 +102,7 @@ void mode(int s, int arr[])
 int main()
 {
   int size=0;
-  cout<<"PROGRAM TO FIND SUM OF ALL ELEMENTS OF AN ARRAY USING FUNCTIONS";
+  cout<<"PROGRAM TO PRINT MAXIMUM, MINIMUM, MEAN, MEDIAN, MODE OF THE ELEMENTS OF THE ARRAY";
   cout<<"\n \nEnter the size of the array: ";
   cin>>size;
   int arr[size];
