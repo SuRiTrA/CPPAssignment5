@@ -41,7 +41,7 @@ int main()
   cin>>size2;
   int arr2[size2];
   cout<<"\n \nEnter the elements of second array: ";
-  for(a=0;a<size2;a++)
+  for(int a=0;a<size2;a++)
   {
     cout<<"\nElement "<<(a+1)<<": ";
     cin>>arr2[a];
