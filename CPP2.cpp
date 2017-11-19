@@ -116,8 +116,8 @@ int main()
   min(size, arr);
   mean(size, arr);
   mode(size, arr);
-  //For finding mean we need a sorted array
+  //For finding median we need a sorted array
   sort(size, arr);
-  mode(size, arr);
+  median(size, arr);
   return 0;
 }
