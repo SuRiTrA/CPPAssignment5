@@ -1,3 +1,4 @@
+
 #include <iostream>
 using namespace std;
 
@@ -33,7 +34,7 @@ void mean(int s, int arr[])
     sum=sum+arr[i];
   }
   float mean=0;
-  mean=((float)sum/5);
+  mean=(((float)sum)/s);
   cout<<"\n \nThe mean of array elements is: "<<mean;
 }
 
@@ -64,7 +65,7 @@ void median(int s, int arr[])
   int median;
   if(s%2==0)
   {
-    median=(arr[s/2]+arr[(s+1)/2])/2;
+    median=((float)(arr[s/2]+arr[(s/2-1)]))/2;
   }
   else
   {
